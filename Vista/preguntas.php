@@ -156,13 +156,6 @@
 
 
 
-            <br><br>
-            <div class="row container">      
-
-             <div class="col-sd-10">
-                 <button  onclick="location.href='../Controlador/retirarse.php'" class="btn btn-warning">Retirar</button>
-             </div>
-         </div>
 
      </body>
      </html>
