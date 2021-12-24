@@ -56,6 +56,9 @@
         <h2 class="text-center"> JUEGA, APRENDE Y GANA </h2>       
       <div class="form-group">
         <input class="form-control" type="text" name="nombre" id="username"  placeholder="Nombre de Jugador" required="required">
+
+    
+
     </div>
     
     <div class="form-group">
