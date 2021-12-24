@@ -25,14 +25,11 @@ if ($estado['estado'] == 1) {
 
 		$sql = "UPDATE jugadores SET categoria = '$categoria[categoria]' + 1, puntajePartida = '$categoria[puntajePartida]' + 100 WHERE nombre ='$nombre'";
 	$resp =$mysqli->query($sql);
-	if ($categoria['puntajePartida'] >= 400) {
-
-			$sqlPa = "UPDATE jugadores SET puntaje = '$categoria[puntaje]' + 500 WHERE nombre ='$nombre'";
-	$resp =$mysqli->query($sqlPa);
-
-
+	if ($categoria['puntajePartida'] != 400) {
 	header("Location:../Vista/preguntas.php?nombre=$nombre");
 }else{
+		$sqlPa = "UPDATE jugadores SET puntaje = '$categoria[puntaje]' + 500 WHERE nombre ='$nombre'";
+	$resp =$mysqli->query($sqlPa);
 	  echo "<script>
                 alert('Completo el reto');
                 window.location= '../index.php'
